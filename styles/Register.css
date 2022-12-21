@@ -1,0 +1,205 @@
+.register {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  min-height: 100vh;
+}
+.panels-container {
+  width: 55%;
+  background: #0f1141;
+  position: relative;
+}
+.sml {
+  display: none;
+}
+.lg {
+  display: block;
+}
+.bigcircle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 85%;
+  height: 70%;
+}
+.redsmiley {
+  position: absolute;
+  left: 0;
+  bottom: 10.5%;
+}
+.form-container {
+  width: 45%;
+  max-width: 45%;
+  position: relative;
+  /* overflow: hidden; */
+}
+.form-container .form .welcome {
+  /* padding: 30px; */
+  width: 83%;
+  margin: 25px 0;
+}
+.form-container .welcome div:nth-child(1) {
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.03em;
+  color: #666666;
+}
+.form-container .welcome div:nth-child(2) {
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: -0.03em;
+  color: #261c40;
+}
+.heading {
+  display: flex;
+  gap: 20px;
+  right: 20px;
+  top: 20px;
+  position: absolute;
+}
+.heading div,
+.heading-sml div {
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.03em;
+
+  color: #000000;
+}
+.heading button,
+.heading-sml button {
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.03em;
+  background: transparent;
+  color: #7378de;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  height: 48px;
+  gap: 10px;
+  border: 1.5px solid #7378de;
+  border-radius: 64px;
+}
+
+.form {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.checkbox {
+  display: flex;
+  width: 83%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow: hidden;
+}
+.checkbox label {
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.03em;
+  color: #000000;
+}
+@media screen and (max-width: 800px) {
+  .register {
+    width: 100vw;
+    overflow: hidden;
+  }
+  .lg {
+    display: none;
+  }
+  .sml {
+    display: block;
+  }
+  .logo {
+    top: 25px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .smallcircle {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  .starsmall {
+    position: absolute;
+    left: 49px;
+    top: 73px;
+    width: 33px;
+  }
+  .panels-container {
+    width: 100vw;
+    height: 200px;
+    overflow: hidden;
+  }
+  .form-container {
+    min-width: 100vw;
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .form {
+    width: 100%;
+    justify-content: center;
+    position: static;
+    top: 0;
+    transform: translateY(0%);
+  }
+  .form div {
+    width: 80%;
+  }
+  .heading {
+    display: flex;
+    width: 100%;
+    top: 100px;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    left: 0;
+  }
+  .heading div {
+    color: white;
+  }
+  .heading button {
+    height: 42px;
+    width: 180px;
+  }
+}
+/* @media screen and (max-width: 800px) and (min-height: 800px) {
+  .form {
+    transform: translateY(-10%);
+  }
+} */
